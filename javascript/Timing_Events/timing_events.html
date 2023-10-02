@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <p>You want my name</p>
+    <p id="name"></p>
+
+    <button id="btn"> Click Me</button>
+
+    <script>
+        const myName = document.getElementById('name');
+        const btn = document.getElementById('btn');
+
+        const showMyName = () => {
+            myName.innerHTML = "Loading Please Wait"
+            setTimeout(() => {
+                myName.innerHTML = "Preetam Devji"
+            },2000);
+        };
+
+        btn.addEventListener('click', showMyName);
+    </script> -->
+
+    <h1 style="background-color: black; color:coral;">Hello, Start your Quiz</h1>
+    <h3 style='color: red;'>Every Question Have 5 second, So Prepare First</h3>
+
+    <ul>
+        <li>What is the capital of France?</li>
+        <li>How many planets are in our solar system?</li>
+        <li>Who wrote the play 'Romeo and Juliet'?</li>
+        <li>What is the largest mammal in the world?</li>
+    </ul>
+
+    <div id="qAns"></div>
+    <button id="quiz">Start Your Quiz </button>
+    <script>
+       
+       const question =document.getElementById('qAns');
+       const quiZ =document.getElementById('quiz'); 
+
+       const startQuiz = () => {
+        question.innerHTML = "Loading Please Wait"
+        setTimeout(() => {
+            question.innerHTML = [
+            "What is the capital of France?",
+            "How many planets are in our solar system?",
+            "Who wrote the play 'Romeo and Juliet'?",
+            "What is the largest mammal in the world?"
+            ]
+        }, 2000);
+       };
+
+       quiZ.addEventListener('click', startQuiz);
+    </script>
+
+
+
+
+</body>
+</html>
